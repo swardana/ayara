@@ -192,6 +192,8 @@
                 <configuration>
                     <argLine>
                         --add-opens
+                        com.swardana.ayara/com.swardana.ayara.download=ALL-UNNAMED
+                        --add-opens
                             com.swardana.ayara/com.swardana.ayara.manga.nhentai=ALL-UNNAMED
                     </argLine>
                 </configuration>
