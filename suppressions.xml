@@ -23,5 +23,7 @@
 <suppressions>
 
     <suppress checks="HideUtilityClassConstructor" files="AyaraConsole.java" />
+    <suppress checks="CyclomaticComplexity" files="AyaraConsole.java" />
+    <suppress checks="IllegalCatch" files="AyaraConsole.java" />
 
 </suppressions>
