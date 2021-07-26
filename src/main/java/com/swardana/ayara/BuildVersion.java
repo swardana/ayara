@@ -62,4 +62,16 @@ public final class BuildVersion {
         return PROPS.getProperty("build.number", "UNSET");
     }
 
+    public String copyright() {
+        return PROPS.getProperty("copyright", "UNSET");
+    }
+
+    public String author() {
+        return PROPS.getProperty("author", "UNSET");
+    }
+
+    public String desc() {
+        return PROPS.getProperty("app.desc", "UNSET");
+    }
+
 }

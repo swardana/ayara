@@ -41,6 +41,9 @@
                 https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/text/SimpleDateFormat.html
          -->
         <maven.build.timestamp.format>yyM.w.ukkmm</maven.build.timestamp.format>
+        <copyright>2021</copyright>
+        <author>Sukma Wardana</author>
+        <app.desc>a non-interactive nhentai.net manga downloader</app.desc>
 
         <!-- For MANIFEST.MF -->
         <app.name>com/swardana/ayara</app.name>

@@ -38,4 +38,28 @@ public class BuildVersionTest {
         assertThat(actual).isNotNull().isEqualTo(expected);
     }
 
+    @Test
+    @DisplayName("Test get the copyright year")
+    public void testCopyrightYear() {
+        var expected = "2021";
+        var actual = BuildVersion.getInstance().copyright();
+        assertThat(actual).isNotNull().isEqualTo(expected);
+    }
+
+    @Test
+    @DisplayName("Test get the author name")
+    public void testAuthorName() {
+        var expected = "Sukma Wardana";
+        var actual = BuildVersion.getInstance().author();
+        assertThat(actual).isNotNull().isEqualTo(expected);
+    }
+
+    @Test
+    @DisplayName("Test get the app description")
+    public void testApplicationDescription() {
+        var expected = "a non-interactive nhentai.net manga downloader";
+        var actual = BuildVersion.getInstance().desc();
+        assertThat(actual).isNotNull().isEqualTo(expected);
+    }
+
 }
