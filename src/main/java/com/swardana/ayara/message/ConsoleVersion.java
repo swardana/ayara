@@ -35,10 +35,22 @@ public class ConsoleVersion implements Version {
     @Override
     public final void print() {
         var content = """
-            Ayara %s (%s)
+            Ayara %s (%s), %s
+            
+            Copyright (C) %s %s.
+            License GPLv3+: GNU GPL version 3 or later
+            <http://www.gnu.org/licenses/gpl.html>.
+            This is free software: you are free to change and redistribute it.
+            There is NO WARRANTY, to the extent permitted by law.
+            
+            Written by Sukma Wardana <swardana@tutanota.com>.
+            Please send bug reports and questions to <swardana@tutanota.com>.
             """.formatted(
                 BuildVersion.getInstance().buildVersion(),
-                BuildVersion.getInstance().buildNumber()
+                BuildVersion.getInstance().buildNumber(),
+                BuildVersion.getInstance().desc(),
+                BuildVersion.getInstance().copyright(),
+                BuildVersion.getInstance().author()
             );
         System.out.println(content);
         System.exit(0);
