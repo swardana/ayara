@@ -49,6 +49,10 @@
         <app.name>com/swardana/ayara</app.name>
         <app.title>Ayara</app.title>
 
+        <!-- For maven-exec-plugin -->
+        <module.name>com.swardana.ayara</module.name>
+        <class.name>com.swardana.ayara.AyaraConsole</class.name>
+
         <!-- plugins -->
         <maven.version>3.8.1</maven.version>
         <maven.clean.version>3.1.0</maven.clean.version>
@@ -143,6 +147,9 @@
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>exec-maven-plugin</artifactId>
                 <version>${maven.exec.version}</version>
+                <configuration>
+                    <mainClass>${module.name}/${class.name}</mainClass>
+                </configuration>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
