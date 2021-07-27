@@ -1,0 +1,61 @@
+                                 Ayara
+
+NAME
+        ayara - the non-interactive nhentai.net manga downloader.
+
+SYNOPSIS
+        ayara [option]... [number]
+
+DESCRIPTION
+        Ayara is a free utility for non-interactive https://nhentai.net manga
+        downloader. It supports to download hentai manga once at a time based
+        on the digit number.
+
+OPTIONS
+    Option Syntax
+        Every option has a long form along with the short one. Long options are
+        more convenient to remember, but take time to type. You may freely mix
+        different option styles, or specify options after the command-line
+        arguments. Thus you may write:
+
+            ayara -x --output-directory /tmp 177013
+
+        The space between the option accepting an argument and the argument is
+        mandatory and can't be omitted.
+
+        To use several options that do not require arguments you must put space
+        in between, like:
+
+            ayara -c -x -O /tmp 177013
+
+    Basic Startup Options
+        -V
+        --version
+            Display the version of ayara.
+
+        -h
+        --help
+            Print a help message describing all of ayara's command-line options
+
+    Download Options
+        -c
+        --continue
+            Continue getting a partially-downloaded manga. This is useful when
+            you want to finish up a download started by a previous instance of
+            ayara, or by another program. For instance:
+
+               ayara -c -O /tmp 177013
+
+            It will continue to download from the last page that already exist
+            on the output directory.
+
+    Directory Options
+        -x
+        --force-directories
+           Create a hierarchy of directories, even if one would not have been
+           created otherwise. e.g. ayara -x -O /tmp/new.manga 177013 will save
+           the hentai manga to /tmp/new.manga.
+
+        -O target
+        --output-directory target
+           Download the hentai manga into the target directory.
