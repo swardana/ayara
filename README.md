@@ -33,7 +33,7 @@ For details ayara options check `-h` or `--help`.
 Build the Ayara installer based on host operating system.
 
 ```bash
-mvn install -installer
+mvn install -Pinstaller
 ```
 
 This will build ayara at `target/installer` folder.
